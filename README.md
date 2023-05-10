@@ -14,7 +14,7 @@
 1. Переместиться в папку client c помощью команды cd
 2. mkdir build
 3. cd build
-4. Далее в скрипте необходимо указать правильные пути до компилятора. В моём случае используется msvc2019_64 расположенный по данному пути C:/Qt/5.15.2/msvc2019_64
+4. Далее в скрипте необходимо указать правильные пути до компилятора. В моём случае используется msvc2019_64 расположенный по данному пути C:/Qt/5.15.2/msvc2019_64<br />
 cmake -DQT_DIR:PATH=C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5 -DQT_QMAKE_EXECUTABLE:FILEPATH=C:/Qt/5.15.2/msvc2019_64/bin/qmake.exe -DQt5Core_DIR:PATH=C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Core -DQt5Gui_DIR:PATH=C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Gui -DQt5Network_DIR:PATH=C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Network -DQt5Widgets_DIR:PATH=C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5Widgets -DQt5_DIR:PATH=C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5 ..
 5. cmake --build .
 
